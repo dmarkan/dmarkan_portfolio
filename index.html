@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Darko Markan Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li id="prvi">O Meni</li>
+        <li id="drugi">Obrazovanje</li>
+        <li id="treci">Projekti</li>
+        <li id="cetvrti">Kontakt</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="o_meni">
+      <p>
+        Zdravo, moje ime je <span> Darko Markan</span>.</p>
+      <p>Učim programiranje i želja mi je da postanem
+        <i>Front End Web Developer</i> i da nadjem posao u toj struci.
+        Ovo je moj zvanični sajt i na njemu možete pronaći moje
+        projekte, pročitati moju biografiju i videti načine na koje
+        me možete kontaktirati ukoliko želite saradnju sa mnom.
+      </p>
+      <button><a href="https://docdro.id/P5Tp2u7" target="_blank">Preuzmi moj CV</a></button>
+    </div>
+    <div class="krug"></div>
+    <img class="slika" src="images/slika.png" alt="slika">
+    <div class="obrazovanje">
+      <table>
+        <tr>
+          <td><img src="images/srednja.png" alt="srednja"></td>
+          <td><a href="https://www.vakademija.edu.rs/" target="_blank">Tehnička škola Petar Drapšin - 2006.</a>
+            <p>Mašinski tehničar za kompjutersko konstruisanje</p>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="images/visa.png" alt="visa"></td>
+          <td><a href="https://www.viser.edu.rs/" target="_blank">Visoka škola elektrotehnike i računarstva strukovnih
+              studija -
+              2010.</a>
+            <p>Inženjer za elektronsko poslovanje</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="wrapper">
+      <img class="prev-btn" src="images/arrow_left.png" alt="left">
+      <div class="slides-container">
+        <div class="slide-image">
+          <a href="https://dmarkan.github.io/galerija/" target="_blank">
+            <h1>Galerija za sajtove</h1>
+          </a>
+          <p>Kod za galeriju koji sam napisao koji se može koristiti za sajtove</p>
+          <img id="logos" src="images/logos.png">
+          <img src="slider/slide-image1.png" alt="slide1" />
+        </div>
+        <div class="slide-image">
+          <a href="https://dmarkan.github.io/shopping_cart/" target="_blank">
+            <h1>Shopping cart</h1>
+          </a>
+          <p>Kod za shopping cart koji sam napisao koji se može koristiti za sajtove</p>
+          <img id="jquery" src="images/jquery.png">
+          <img src="slider/slide-image2.png" alt="slide2" />
+        </div>
+        <div class="slide-image">
+          <a href="https://dmarkan.github.io/login/" target="_blank">
+            <h1>Sign-Up/Login</h1>
+          </a>
+          <p>Sign-Up/Login forma koja se može koristiti za sajtove</p>
+          <img id="logos" src="images/logos.png">
+          <img src="slider/slide-image3.png" alt="slide3" />
+        </div>
+        <div class="slide-image">
+          <a href="https://dmarkan.github.io/beleske/" target="_blank">
+            <h1>Beleške</h1>
+          </a>
+          <p>Aplikacija za pisanje i uklanjanje beleški</p>
+          <img id="logos" src="images/logos.png">
+          <img src="slider/slide-image4.png" alt="slide4" />
+        </div>
+        <div class="slide-image">
+          <a href="https://dmarkan.github.io/tuscan/" target="_blank">
+            <h1>Tuscan</h1>
+          </a>
+          <p>Avanturistička igrica gde se priča odvija na osnovu izbora koje igrač pravi u toku igre</p>
+          <img id="jquery" src="images/jquery.png">
+          <img src="slider/slide-image5.png" alt="slide5" />
+        </div>
+        <div class="slide-image">
+          <a href="https://dmarkan.github.io/vreme_mobi/" target="_blank">
+            <h1>Vremenska prognoza</h1>
+          </a>
+          <p>Vremenska prognoza u Srbiji koja prikazuje prognozu za zadate gradove</p>
+          <img id="logos" src="images/logos.png">
+          <img src="slider/slide-image6.png" alt="slide6" />
+        </div>
+        <div class="slide-image">
+          <a href="https://dmarkan.github.io/digitron_mobi/" target="_blank">
+            <h1>Digitron</h1>
+          </a>
+          <p>Aplikacija koja služi za obavljanje osnovnih računskih operacija</p>
+          <img id="logos" src="images/logos.png">
+          <img src="slider/slide-image7.png" alt="slide7" />
+        </div>
+        <div class="slide-image">
+          <a href="https://dmarkan.github.io/quest/" target="_blank">
+            <h1>The Quest</h1>
+          </a>
+          <p>Logička igrica gde igrač treba da pobegne iz sobe rešavajući probleme</p>
+          <img id="jquery" src="images/jquery.png">
+          <img src="slider/slide-image8.png" alt="slide8" />
+        </div>
+      </div>
+      <img class="next-btn" src="images/arrow_right.png" alt="right">
+    </div>
+
+    <div class="kontakt">
+      <p>Ako imate neko pitanje za mene, možete ga postaviti ispod a ja ću se potruditi da vam odgovorim u najkraćem
+        mogućem roku.</p>
+      <form name="Pitanja za mene" action="mailto:markandarko@yahoo.com" method="post">
+        <textarea name="pitanje" cols="30" rows="10" placeholder="Postavi mi pitanje:"></textarea>
+        <input id="dugme" type="submit" value="Pošalji">
+      </form>
+      <div class="mreze">
+        <p>Zapratite me na društvenim mrežama:</p>
+        <ul>
+          <li><a href="https://www.facebook.com/darko.markan.39" target="_blank">
+              <img src="images/fb.png" alt="fb">
+            </a></li>
+          <li><a href="https://www.instagram.com/darkomarkan/" target="_blank">
+              <img src="images/in.jpg" alt="in">
+            </a></li>
+          <li><a href="https://www.linkedin.com/in/darko-markan-36b922203/" target="_blank">
+              <img src="images/li.png" alt="li">
+            </a></li>
+          <li><a href="https://github.com/dmarkan" target="_blank">
+              <img id="gh" src="images/git.png" alt="gh">
+            </a></li>
+      </div>
+      </ul>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>

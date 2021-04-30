@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #E1DDDB;
+}
+
+header li {
+    display: inline;
+    color: #0C4A60;
+    font-size: 2rem;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+header li:hover,
+.obrazovanje a:hover,
+.slide-image a:hover {
+    color: #EF6C33;
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+
+header ul {
+    padding: 2% 0 0 2%;
+}
+
+.o_meni {
+    color: #0C4A60;
+    font-size: 2rem;
+    width: 52%;
+    padding: 10% 0 0 4%;
+}
+
+main span {
+    color: #EF6C33;
+    font-weight: bold;
+}
+
+main button,
+#dugme {
+    margin: 3% auto;
+    font-size: 2rem;
+    background-color: #EF6C33;
+    padding: 1%;
+    border-radius: 2%;
+    display: block;
+}
+
+button a {
+    color: #E1DDDB;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main button a:hover,
+#dugme:hover {
+    color: #0C4A60;
+    transition: all 0.5s;
+}
+
+.krug {
+    background-color: #EF6C33;
+    width: 35%;
+    height: 65%;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    display: inline;
+}
+
+.slika {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    height: 85%;
+}
+
+.obrazovanje,
+.kontakt {
+    color: #0C4A60;
+    font-size: 1.8rem;
+    width: 50%;
+    margin-top: 12%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+main table {
+    width: 100%;
+    position: absolute;
+    left: 5%;
+}
+
+main tr {
+    height: 10rem;
+}
+
+main td {
+    width: 5rem;
+    height: 12rem;
+    text-align: center;
+}
+
+.obrazovanje img {
+    width: 80%;
+    height: 80%;
+    left: 0;
+    position: relative;
+}
+
+.obrazovanje a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    color: #0C4A60;
+}
+
+.obrazovanje p {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 45%;
+    height: 60%;
+    overflow: hidden;
+    margin-left: 5%;
+    position: absolute;
+    top: 20%;
+    visibility: hidden;
+}
+
+.slides-container {
+    height: 60%;
+    transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+    position: relative;
+}
+
+.slide-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slide-image a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    color: #0C4A60;
+    font-size: 1.5rem;
+}
+
+.slide-image p {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    color: #0C4A60;
+    font-size: 1rem;
+    padding-top: 2%;
+}
+
+#logos {
+    height: 20%;
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding-top: 1%;
+}
+
+#jquery {
+    height: 20%;
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    padding-top: 1%;
+}
+
+.next-btn,
+.prev-btn {
+    background: #E1DDDB;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    cursor: pointer;
+    transition: 400ms;
+    width: 8%;
+    height: 10%;
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+    background: #EF6C33;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.kontakt {
+    padding-left: 3%;
+    margin-top: 10%;
+}
+
+.kontakt p {
+    text-align: center;
+}
+
+.kontakt form {
+    margin: 2% 0 0 3%;
+}
+
+textarea {
+    font-size: 1rem;
+    width: 100%;
+}
+
+#dugme {
+    margin: 1% auto;
+    display: block;
+    cursor: pointer;
+}
+
+.kontakt ul {
+    margin: 2% 4%;
+    width: 100%;
+}
+
+.kontakt ul li {
+    display: inline;
+}
+
+.kontakt a {
+    text-decoration: none;
+}
+
+.kontakt img {
+    width: 3rem;
+    height: 2rem;
+}
+
+.mreze p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+@media (orientation: landscape) {
+    * {
+        font-size: 1rem;
+    }
+
+    header li {
+        font-size: 1.2rem;
+    }
+
+    main button,
+    #dugme {
+        font-size: 1rem;
+    }
+
+    main td {
+        height: 5rem;
+    }
+
+    .obrazovanje img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .obrazovanje a {
+        font-size: 0.8rem;
+    }
+
+    .obrazovanje p {
+        font-size: 0.8rem;
+    }
+
+    main table {
+        margin-top: -15%;
+        left: 0;
+    }
+
+    .kontakt img {
+        width: 1.5rem;
+        height: 1rem;
+    }
+
+    .mreze p {
+        font-size: 0.6rem;
+    }
+
+    textarea {
+        font-size: 0.6rem;
+    }
+}
+
+@media (orientation: portrait) {
+    * {
+        font-size: 1rem;
+    }
+
+    header li {
+        font-size: 1.2rem;
+    }
+
+    .krug {
+        width: 55%;
+        height: 30%;
+        top: 18%;
+        margin: auto 15%;
+    }
+
+    .slika {
+        top: 10%;
+        margin: auto 15%;
+        height: 40%;
+    }
+
+    .o_meni {
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 80%;
+    }
+
+    main button,
+    #dugme {
+        font-size: 0.8rem;
+    }
+
+    main td {
+        height: 5rem;
+    }
+
+    .obrazovanje img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .obrazovanje a {
+        font-size: 0.8rem;
+    }
+
+    .obrazovanje p {
+        font-size: 0.8rem;
+    }
+
+    main table {
+        margin-top: 150%;
+        left: 10%;
+        width: 150%;
+    }
+
+    .wrapper {
+        width: 90%;
+        height: 40%;
+        top: 55%;
+    }
+
+    .slides-container {
+        height: 40%;
+    }
+
+    .kontakt {
+        margin-top: 95%;
+        width: 90%;
+    }
+
+    .kontakt p {
+        text-align: center;
+
+    }
+
+    textarea {
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .mreze p {
+        font-size: 1rem;
+    }
+}
